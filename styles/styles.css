@@ -2081,6 +2081,18 @@ a {
     display: none;
 }
 
+@media(max-width:1400px) {
+    .w3-custom-button {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1170px) {
+    .w3-custom-button {
+        font-size: 16px;
+    }
+}
+
 @media(max-width:767px) {
     .sticky-nav {
         position: relative;
