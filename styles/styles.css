@@ -564,8 +564,8 @@ a {
     overflow: hidden;
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: 22px;
-    padding-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .w3-center .w3-bar {
@@ -1986,7 +1986,7 @@ a {
 }
 
 .w3-custom-button {
-    background-color: #fde7f3;
+    background-color: #e6f6ff;
     color: black;
     font-size: 20px;
     font-weight: 100;
@@ -2011,7 +2011,7 @@ a {
 }
 
 .submit-resource-btn {
-    background-color: #ff357b;
+    background-color: #00a6fb;
     color: white;
     font-weight: 100;
     font-size: 15px;
@@ -2030,7 +2030,7 @@ a {
     cursor: pointer;
     transform: translateY(-2px);
     transition: .3s;
-    background: #ff357b;
+    background: #00a6fb;
     color: white;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2047,7 +2047,7 @@ a {
 .banner-header p {
     text-align: center!important;
     font-size: 40px;
-    color: #ff357b;
+    color: #00a6fb;
 }
 
 .web-title {
@@ -2107,7 +2107,7 @@ a {
         right: 0;
         z-index: 100;
         background: #fff;
-        color: #ff357b;
+        color: #00a6fb;
         text-align: center;
         padding: 20px;
     }
@@ -2129,7 +2129,7 @@ a {
     .banner-header p {
         text-align: center!important;
         font-size: 32px;
-        color: #ff357b;
+        color: #00a6fb;
     }
     .w3-custom-button {
         font-size: 15px;
@@ -2228,7 +2228,7 @@ nav ul {
 }
 
 .active-btn {
-    background: #ff357b;
+    background: #00a6fb;
     color: white;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
