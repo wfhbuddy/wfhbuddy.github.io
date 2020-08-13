@@ -1,7 +1,776 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages. Test</p>
-</body>
+   <title>WFH Buddy | Resources To Stay Productive at Home</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles/styles.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+   <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+      html {
+      position: relative;
+      min-height: 100%;
+      line-height: 1.8;
+      }
+      .w3-bar .w3-button {
+      padding: 16px;
+      }
+   </style>
+   <body class="noSelect">
+      <!-- Navbar (sit on top) -->
+      <div class="w3-bar w3-white">
+         <div class="w3-auto-custom">
+            <div class="flex items-center justify-with-space">
+               <div>
+                  <a class="web-title" href="#" style="text-decoration: none"><span style="color: #ff357b">WFH Buddy</span></a>
+               </div>
+               <nav>
+                  <ul class="flex">
+                     <li class="submit-resource-btn"><a href="mailto:akash.mathur@mail.utoronto.ca" title="Email" style="text-decoration: none;">Submit a Resource</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+      <div class="banner-header" id="content-resource">
+         <div class="w3-auto-custom">
+            <p id="banner-text" style="margin: 0.5em"></p>
+         </div>
+      </div>
+      <div class="sticky-nav" id="category-nav">
+         <div class="w3-bar w3-white">
+            <div class="flex">
+               <nav class="w3-auto-custom">
+                  <ul class="flex items-center">
+                     <li class="w3-custom-button active-btn" id="all-btn" onclick="showAll()">All</li>
+                     <li class="w3-custom-button" id="tm-btn" onclick="showTimeManagement()">Managing Time</li>
+                     <li class="w3-custom-button" id="org-btn" onclick="showOrganization()">Staying Organized</li>
+                     <li class="w3-custom-button" id="notes-btn" onclick="showNotes()">Taking Notes</li>
+                     <li class="w3-custom-button" id="focused-btn" onclick="showFocused()">Staying Focused</li>
+                     <li class="w3-custom-button" id="hw-btn" onclick="showHealthWellness()">Health & Wellness</li>
+                     <li class="w3-custom-button" id="misc-btn" onclick="showMiscellaneous()">Miscellaneous</li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+      <div class="w3-auto-custom chevronColor chevronHide" id ="chevronDiv" onclick="chevronClick()">
+         <a href="#"><i class="fa fa-chevron-up w3-xlarge"></i></a>
+      </div>
+      <!-- Content -->
+      <div class="w3-container" style="padding:16px">
+         <div class="w3-row-padding w3-auto-custom">
+            <!-- Time Management Resources-->
+
+            <!-- NOTE: this element is uniquely tagged as the 'first resource' -->
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show tm" id="first-resource">
+               <div class="w3-custom-card">
+                  <a href="https://habitminder.com/" target="_blank" title="HabitMinder" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/tm/habitMinder.png" alt="HabitMinder" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>HabitMinder</h5>
+                        <hr>
+                        <p class="w3-card-text">A healthy habit reminder and tracker.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show tm">
+               <div class="w3-custom-card">
+                  <a href="https://www.focustodo.cn/" target="_blank" title="Focus To-Do" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/tm/focusToDo.png" alt="Focus To-Do" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Focus To-Do</h5>
+                        <hr>
+                        <p class="w3-card-text">An easy-to-use time and task management application.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show tm">
+               <div class="w3-custom-card">
+                  <a href="https://pomodor.app/timer" target="_blank" title="Pomodor" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/tm/pomTracker-1.png" alt="Pomodor" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Pomodor</h5>
+                        <hr>
+                        <p class="w3-card-text">A pomodoro productivity timer.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show tm">
+               <div class="w3-custom-card">
+                  <a href="https://engrossapp.com/" target="_blank" title="Engross" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/tm/engross.png" alt="Engross" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Engross</h5>
+                        <hr>
+                        <p class="w3-card-text">An app that combines a pomodoro timer, to-do list and calendar.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show tm">
+               <div class="w3-custom-card">
+                  <a href="https://calendly.com/" target="_blank" title="Calendly" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/tm/calendly.png" alt="Calendly" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Calendly</h5>
+                        <hr>
+                        <p class="w3-card-text">Helping you schedule meetings without the back-and-forth emails.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <!-- Organization Resources-->
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show org">
+               <div class="w3-custom-card">
+                  <a href="https://todoist.com/" target="_blank" title="Todoist" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/org/todoist.png" alt="Todoist" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Todoist</h5>
+                        <hr>
+                        <p class="w3-card-text">Regain clarity by getting tasks out of your head and onto your to-do list.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show org">
+               <div class="w3-custom-card">
+                  <a href="https://ticktick.com/" target="_blank" title="TickTick" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/org/ticktick.png" alt="TickTick" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>TickTick</h5>
+                        <hr>
+                        <p class="w3-card-text">An app that help you manage your to-do's, reminders, and calendars.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show org">
+               <div class="w3-custom-card">
+                  <a href="https://www.rememberthemilk.com/" target="_blank" title="Remember The Milk" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/org/rememberTheMilk.png" alt="Remember The Milk" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Remember The Milk</h5>
+                        <hr>
+                        <p class="w3-card-text">The smart to-do app for busy people.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show org">
+               <div class="w3-custom-card">
+                  <a href="https://habitica.com/static/home" target="_blank" title="Habitica" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/org/habitica.png" alt="Habitica" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Habitica</h5>
+                        <hr>
+                        <p class="w3-card-text">Build your habits & productivity by treating your real life like a game.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show org">
+               <div class="w3-custom-card">
+                  <a href="https://todo.microsoft.com/tasks/en-us/" target="_blank" title="Microsoft To Do" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/org/msftToDo.png" alt="Microsoft To Do" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Microsoft To Do</h5>
+                        <hr>
+                        <p class="w3-card-text">A simple and intelligent to-do list that manages your tasks in one place.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show org">
+               <div class="w3-custom-card">
+                  <a href="https://www.any.do/" target="_blank" title="Any.do" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/org/anyDo.png" alt="Any.do" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Any.do</h5>
+                        <hr>
+                        <p class="w3-card-text">An all-in-one to-do list, calendar, planner & reminders app.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show org">
+               <div class="w3-custom-card">
+                  <a href="https://kanbanflow.com/" target="_blank" title="KanbanFlow" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/org/kanbanFlow.png" alt="KanbanFlow" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>KanbanFlow</h5>
+                        <hr>
+                        <p class="w3-card-text">Visualizing your tasks for improved productivity.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show org">
+               <div class="w3-custom-card">
+                  <a href="https://simplish.co/" target="_blank" title="Simplish" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/org/simplish.png" alt="Simplish" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Simplish</h5>
+                        <hr>
+                        <p class="w3-card-text">Schedule events, organize tasks, & write notes all in one beautiful workspace.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <!-- Notes Resources -->
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://evernote.com/" target="_blank" title="Evernote" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/evernote.png" alt="Jane" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Evernote</h5>
+                        <hr>
+                        <p class="w3-card-text">A single place for your notes, ideas, lists and reminders.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://mindnode.com/" target="_blank" title="MindNode" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/mindNode.png" alt="MindNode" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>MindNode</h5>
+                        <hr>
+                        <p class="w3-card-text">MindNode lets you visually capture, organize, style and share your thoughts.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://otter.ai/" target="_blank" title="Otter" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/misc/otterAi.png" alt="Otter" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Otter</h5>
+                        <hr>
+                        <p class="w3-card-text">Generate rich notes for lectures, meetings, and other important voice conversations.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://boostnote.io/" target="_blank" title="Boost Note" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/boostnote.png" alt="Boost Note" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Boost Note</h5>
+                        <hr>
+                        <p class="w3-card-text">An intuitive and stylish markdown note app for developers.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://milanote.com/" target="_blank" title="Milanote" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/milanote.png" alt="Milanote" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Milanote</h5>
+                        <hr>
+                        <p class="w3-card-text">A tool to organize your ideas and projects into visual boards.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://simplenote.com/" target="_blank" title="Simplenote" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/simplenote.png" alt="Simplenote" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Simplenote</h5>
+                        <hr>
+                        <p class="w3-card-text">The simplest way to keep all your notes, all the time.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://standardnotes.org/" target="_blank" title="Evernote" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/standardNotes.png" alt="Jane" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Standard Notes</h5>
+                        <hr>
+                        <p class="w3-card-text">A free, open-source, and completely encrypted notes app.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://keep.google.com/" target="_blank" title="Google Keep" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/googleKeep.png" alt="Google Keep" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Google Keep</h5>
+                        <hr>
+                        <p class="w3-card-text">A Google app to save your thoughts, wherever you are.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://onenote.com/" target="_blank" title="Microsoft OneNote" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/msftOneNote.png" alt="Microsoft OneNote" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Microsoft OneNote</h5>
+                        <hr>
+                        <p class="w3-card-text">Organize your world into notebooks with sections and pages.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://coggle.it/" target="_blank" title="Coggle" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/coggle.png" alt="Coggle" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Coggle</h5>
+                        <hr>
+                        <p class="w3-card-text">Produce & share beautiful notes quickly and easily.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="http://www.mindlyapp.com/" target="_blank" title="Mindly" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/mindly.png" alt="Mindly" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Mindly</h5>
+                        <hr>
+                        <p class="w3-card-text">Mindly helps you maximize your creativity, organization, and focus.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <a href="https://www.mindmeister.com/" target="_blank" title="MindMeister" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/notes/mindmeister.png" alt="MindMeister" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>MindMeister</h5>
+                        <hr>
+                        <p class="w3-card-text">A mind mapping tool that lets you capture, develop and share ideas visually.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <!-- Staying Focused -->
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show focus">
+               <div class="w3-custom-card">
+                  <a href="https://memory.ai/dewo" target="_blank" title="Dewo" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/focus/dewo.png" alt="Dewo" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Dewo</h5>
+                        <hr>
+                        <p class="w3-card-text">A personal assisstant for deep work, helping you stay in your flow.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show focus">
+               <div class="w3-custom-card">
+                  <a href="https://www.noisli.com/" target="_blank" title="Noisli" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/focus/noisli.png" alt="Noisli" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Noisli</h5>
+                        <hr>
+                        <p class="w3-card-text">Mix different sounds to create your perfect sound environment for work.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show focus">
+               <div class="w3-custom-card">
+                  <a href="https://www.forestapp.cc/" target="_blank" title="Forest" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/focus/forest.png" alt="Forest" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Forest</h5>
+                        <hr>
+                        <p class="w3-card-text">Stay focused, be present, and plant real trees on Earth.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show focus">
+               <div class="w3-custom-card">
+                  <a href="https://freedom.to/" target="_blank" title="Freedom" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/focus/freedom.png" alt="Freedom" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Freedom</h5>
+                        <hr>
+                        <p class="w3-card-text">Block distracting websites and apps. Stay focused on what matters most.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show focus">
+               <div class="w3-custom-card">
+                  <a href="https://inboxwhenready.org/" target="_blank" title="Inbox When Ready" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/focus/inboxWhenReady.png" alt="Inbox When Ready" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Inbox When Ready</h5>
+                        <hr>
+                        <p class="w3-card-text">The tool that helps minimise the total time you spend in your inbox.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show focus">
+               <div class="w3-custom-card">
+                  <a href="https://coffitivity.com/" target="_blank" title="Coffitivity" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/focus/coffitivity.png" alt="Coffitivity" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Coffitivity</h5>
+                        <hr>
+                        <p class="w3-card-text">Recreating the ambient sounds of a cafe to boost your creativity and help you work better.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <!-- Health & Wellness -->
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://www.headspace.com/" target="_blank" title="Headspace" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/headspace.png" alt="Headspace" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Headspace</h5>
+                        <hr>
+                        <p class="w3-card-text">A mindfulness app for your everyday life.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://www.alltrails.com/" target="_blank" title="AllTrails" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/allTrails.png" alt="AllTrails" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>AllTrails</h5>
+                        <hr>
+                        <p class="w3-card-text">Hand-curated trail guides, so you can explore the outdoors with confidence.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://join.shinetext.com/" target="_blank" title="Shine" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/shine.png" alt="Shine" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Shine</h5>
+                        <hr>
+                        <p class="w3-card-text">The self-care app to help you rest, heal, and grow through difficulty.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://aloebud.com/" target="_blank" title="Aloe Bud" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/aloeBud.png" alt="Aloe Bud" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Aloe Bud</h5>
+                        <hr>
+                        <p class="w3-card-text">An app to help improve your mental health with gentle self-care reminders.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://plantnanny.app/" target="_blank" title="Plant Nanny" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/plantNanny.png" alt="Plant Nanny" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Plant Nanny</h5>
+                        <hr>
+                        <p class="w3-card-text">Track your water consumption history and easily build good habits to stay hydrated.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://www.mypossibleself.com/" target="_blank" title="My Possible Self" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/myPossibleSelf.png" alt="My Possible Self" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>My Possible Self</h5>
+                        <hr>
+                        <p class="w3-card-text">The mental health app clinically proven to reduce stress, anxiety and low moods.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://www.sleepcycle.com/" target="_blank" title="Sleep Cycle" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/sleepCycle.png" alt="Sleep Cycle" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Sleep Cycle</h5>
+                        <hr>
+                        <p class="w3-card-text">Tracking and analyzing your sleep, waking you up at the perfect time feeling rested.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://wakeout.co/" target="_blank" title="Wakeout" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/wakeout.png" alt="Wakeout" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Wakeout</h5>
+                        <hr>
+                        <p class="w3-card-text">Fun movements for energy and enhanced mood, wherever you spend most of your time.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://seven.app/" target="_blank" title="Seven" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/seven.png" alt="Seven" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Seven</h5>
+                        <hr>
+                        <p class="w3-card-text">Workouts that provide the maximum benefit in the shortest time possible.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://fitonapp.com/" target="_blank" title="FitOn" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/fitOn.png" alt="FitOn" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>FitOn</h5>
+                        <hr>
+                        <p class="w3-card-text">Quick & effective workouts from celebrity trainers you can do anywhere</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show hw">
+               <div class="w3-custom-card">
+                  <a href="https://www.runtastic.com/" target="_blank" title="Runtastic" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/hw/runtastic.png" alt="Runtastic" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Runtastic</h5>
+                        <hr>
+                        <p class="w3-card-text">Select muscle groups and create your own workout that fits your schedule.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <!-- Miscellaneous -->
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show misc">
+               <div class="w3-custom-card">
+                  <a href="https://krisp.ai/" target="_blank" title="Krisp" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/misc/krisp.png" alt="Krisp" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Krisp</h5>
+                        <hr>
+                        <p class="w3-card-text">Mute background noise in any communication app.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show misc">
+               <div class="w3-custom-card">
+                  <a href="https://www.use-together.com/" target="_blank" title="USE Together" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/misc/useTogether.png" alt="USE Together" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>USE Together</h5>
+                        <hr>
+                        <p class="w3-card-text">A remote pair-programming and team collaboration tool.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show misc">
+               <div class="w3-custom-card">
+                  <a href="https://getpocket.com/" target="_blank" title="Pocket" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/misc/pocket.png" alt="Pocket" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Pocket</h5>
+                        <hr>
+                        <p class="w3-card-text">Save articles, videos and stories from any publication, page or app.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show misc">
+               <div class="w3-custom-card">
+                  <a href="https://www.lastpass.com/" target="_blank" title="LastPass" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/misc/lastPass.png" alt="LastPass" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>LastPass</h5>
+                        <hr>
+                        <p class="w3-card-text">Remember all your passwords across every device.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show misc">
+               <div class="w3-custom-card">
+                  <a href="https://www.mozilla.org/en-CA/firefox/lockwise/" target="_blank" title="Firefox Lockwise" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/misc/firefoxLockwise.png" alt="Firefox Lockwise" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Firefox Lockwise</h5>
+                        <hr>
+                        <p class="w3-card-text">Securely access the passwords you’ve saved in Firefox from anywhere.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show misc">
+               <div class="w3-custom-card">
+                  <a href="https://zapier.com/zappy" target="_blank" title="Zappy" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/misc/zappy.png" alt="Zappy" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Zappy</h5>
+                        <hr>
+                        <p class="w3-card-text">The fastest, all-in-one way to share screenshots, GIFs, and recordings with your teammates.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show misc">
+               <div class="w3-custom-card">
+                  <a href="https://stormboard.com/" target="_blank" title="Stormboard" style="text-decoration: none;">
+                     <div class="w3-card-img">
+                        <img src="w3-images/misc/stormboard.png" alt="Stormboard" style="width:100%">
+                     </div>
+                     <div class="w3-container">
+                        <h5>Stormboard</h5>
+                        <hr>
+                        <p class="w3-card-text">Make your meetings, brainstorms, and projects more productive and effective.</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="w3-center w3-white w3-padding-16" id="footer">
+         <p class="footer-text">Made with ❤️ by <a href="https://akashmathur.com" target="_blank" title="Akash Mathur">Akash Mathur</a></p>
+         <p class="footer-text">All screenshots belong to their respective owners.</p>
+      </footer>
+      <!-- inserting jQuery reference script-->
+      <script src="jquery-3.3.1.js"></script>
+      <script type="text/javascript" src="javascript/typing.js"></script>
+      <script type="text/javascript" src="javascript/script.js"></script>
+   </body>
 </html>
